@@ -7,7 +7,7 @@ import random
 from pyrogram import filters, enums, Client
 from pyrogram.types import Message
 
-from ..database import add_afk, is_afk, remove_afk
+from ..database1 import add_afk, is_afk, remove_afk
 from .. import app
 from ..helpers.human_read import get_readable_time2
 

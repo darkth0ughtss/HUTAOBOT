@@ -1,147 +1,138 @@
+# BOT/utils/whisper.py
+
+import shortuuid
+from pymongo import MongoClient
 from pyrogram import filters
-from pyrogram.types import InlineQueryResultPhoto, InlineKeyboardMarkup, InlineKeyboardButton, InlineQueryResultArticle, InputTextMessageContent
-from pyrogram import enums
-from HuTao import app, LOG_CHANNEL_ID
-from HuTao.Config import COMMAND_HANDLER
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQueryResultArticle, InputTextMessageContent
+from pyrogram.raw import types
+from pyrogram.enums import ParseMode
+from ..config import MONGO_URL, bot_token
+from .. import app as Client 
+# Initialize MongoDB client
+client = MongoClient(MONGO_URL)
+db = client["THE-BOT"]
+collection = db["whispers"]
 
+# Whispers Class
+class Whispers:
+    @staticmethod
+    def add_whisper(WhisperId, WhisperData):
+        whisper = {"WhisperId": WhisperId, "whisperData": WhisperData}
+        collection.insert_one(whisper)
 
-@app.on_message(filters.command("whisper", COMMAND_HANDLER))
-async def startmsg(app, message):
-   text = f"""
-👋 Hi {message.from_user.mention}
+    @staticmethod
+    def del_whisper(WhisperId):
+        collection.delete_one({"WhisperId": WhisperId})
 
-❓ How to use this bot in inline:
+    @staticmethod
+    def get_whisper(WhisperId):
+        whisper = collection.find_one({"WhisperId": WhisperId})
+        return whisper["whisperData"] if whisper else None
 
-`@{app.me.username} Hi @KIRITO1240`
-`@{app.me.username} Hi @all`
+# Function to parse user message
+def parse_user_message(query_text):
+    text = query_text.split(" ")
+    user = text[0]
+    first = True
+    message = ""
 
-"""
-   key = InlineKeyboardMarkup (
-     [[
-       InlineKeyboardButton ("TRY NOW", switch_inline_query='Hi @KIRITO1240') ]]
-   )
-   await message.reply(text, reply_markup=key, quote=True)
+    if not user.startswith("@") and not user.isdigit():
+        user = text[-1]
+        first = False
 
-
-@app.on_inline_query(filters.regex("@"))
-async def whisper(app, iquery):
-    user = iquery.query.split("@")[1]
-    if " " in user: return 
-    user_id = iquery.from_user.id
-    query = iquery.query.split("@")[0]
-    if user == "all":
-      text = "🎊 This wisper for all"
-      username = "all"
+    if first:
+        message = " ".join(text[1:])
     else:
-      try:
-       get = await app.get_chat(user)
-       user = get.id
-       username = get.username
-      except Exception:
-        pass
-      text = f"**🔒 Secret whisper for ( @{username} ) .ا**"
-    send = await app.send_message(LOG_CHANNEL_ID, query)
-    reply_markup = InlineKeyboardMarkup(
-      [[
-        InlineKeyboardButton("📪 Show whisper", callback_data=f"{send.id}catch{user}from{user_id}")
-      ]]
-    )
-    await iquery.answer(
-      results=[
-       InlineQueryResultArticle(
-          title=f"📪 Send whisper for {username}",
-          url="http://t.me/NovaXNetwork",
-          input_message_content=InputTextMessageContent(
-            message_text=text,
-            parse_mode=enums.ParseMode.MARKDOWN 
-          ),
-          reply_markup=reply_markup
-       )
-      ],
-      cache_time=1
-    )
+        text.pop()
+        message = " ".join(text)
 
-@app.on_inline_query()
-async def whisper(app, query):
-    text = f"""
-❓ How to use this bot in inline:
+    return user, message
 
-@{app.me.username} Hi @KIRITO1240
-@{app.me.username} Hi @all
-"""
-    await query.answer(
-        results=[
-            InlineQueryResultPhoto(
-                title="🔒 Type the whisper + username",
-                photo_url='https://t.me/KIRITO1240',
-                description=f'@{app.me.username} Hello @KIRITO120',
-                reply_markup=InlineKeyboardMarkup ([[InlineKeyboardButton ("🔗", url='t.me/NovaXNetwork')]]),
-                input_message_content=InputTextMessageContent(text)
-            ),
-        ],
-        cache_time=1
-    )
-    
-@app.on_callback_query(filters.regex("catch"))
-async def get_whisper(app,query):
-    sp = query.data.split("catch")[1]
-    user = sp.split("from")[0]
-    from_user = int(sp.split("from")[1])
-    reply_markup = InlineKeyboardMarkup(
-      [
-      [
-        InlineKeyboardButton("📭 Show whisper", callback_data=query.data)
-      ],
-      [
-        InlineKeyboardButton("🗑️", callback_data=f"DELETE{from_user}")
-      ],
-      ]
-    )
-    if user == "all":
-       msg = await app.get_messages(LOG_CHANNEL_ID, int(query.data.split("catch")[0]))
-       await query.answer(msg.text, show_alert=True)
-       try:
-         await query.edit_message_reply_markup(
-           reply_markup
-         )
-       except:
-         pass
-       return 
-    
-    else:
-      if str(query.from_user.id) == user:
-        msg = await app.get_messages(LOG_CHANNEL_ID, int(query.data.split("catch")[0]))
-        await query.answer(msg.text, show_alert=True)
-        try:
-         await query.edit_message_reply_markup(
-           reply_markup
-         )
-        except:
-         pass
-        return 
+# Inline query handler
+@Client.on_inline_query()
+async def mainwhisper(client, inline_query):
+    query = inline_query.query
+    if not query:
+        return await inline_query.answer(
+            [],
+            switch_pm_text="Give me a username or ID!",
+            switch_pm_parameter="ghelp_whisper",
+        )
 
-      if query.from_user.id == from_user:
-        msg = await app.get_messages(LOG_CHANNEL_ID, int(query.data.split("catch")[0]))
-        await query.answer(msg.text, show_alert=True)
+    user, message = parse_user_message(query)
+    if len(message) > 200:
         return
-      
-      else:
-        await query.answer("🔒 This whisper it's not for you .", show_alert=True)
-        return 
 
-@app.on_callback_query(filters.regex("DELETE"))
-async def del_whisper(app,query):
-   user = int(query.data.split("DELETE")[1])
-   if not query.from_user.id == user:
-     return await query.answer("❓ Only the sender can use this button .")
-   
-   else:
-     reply_markup = InlineKeyboardMarkup(
-      [[
-        InlineKeyboardButton("DEV. 🔗", url="https://t.me/KIRITO1240")
-      ]]
-    )
-     await query.edit_message_text(f"**🗑️ This whisper was deleted by ( {query.from_user.mention} ) .**",
-       reply_markup=reply_markup
-     )
-     
+    usertype = "username" if user.startswith("@") else "id"
+
+    if user.isdigit():
+        try:
+            chat = await client.get_chat(int(user))
+            user = f"@{chat.username}" if chat.username else chat.first_name
+        except Exception:
+            pass
+
+    whisperData = {
+        "user": inline_query.from_user.id,
+        "withuser": user,
+        "usertype": usertype,
+        "type": "inline",
+        "message": message,
+    }
+    whisperId = shortuuid.uuid()
+
+    # Add the whisper to the database
+    Whispers.add_whisper(whisperId, whisperData)
+
+    answers = [
+        InlineQueryResultArticle(
+            id=whisperId,
+            title=f"🤫 Send a whisper message to {user}!",
+            description="Only they can see it!",
+            input_message_content=InputTextMessageContent(
+                f"<b>🔒 A Whisper Message For {user}</b>\nOnly they can see it!",
+                parse_mode=ParseMode.HTML
+            ),
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            "💌 𝗦𝗵𝗼𝘄 𝗪𝗵𝗶𝘀𝗽𝗲𝗿 💌",
+                            callback_data=f"whisper_{whisperId}",
+                        )
+                    ]
+                ]
+            ),
+        )
+    ]
+
+    await inline_query.answer(answers)
+
+# Callback query handler
+@Client.on_callback_query(filters.regex(r"whisper_"))
+async def showWhisper(client, callback_query):
+    whisperId = callback_query.data.split("_")[-1]
+    whisper = Whispers.get_whisper(whisperId)
+
+    if not whisper:
+        await callback_query.answer("This whisper is not valid anymore!", show_alert=True)
+        return
+
+    userType = whisper["usertype"]
+    from_user_id = callback_query.from_user.id
+
+    if from_user_id == whisper["user"]:
+        await callback_query.answer(whisper["message"], show_alert=True)
+    elif (
+        userType == "username"
+        and callback_query.from_user.username
+        and callback_query.from_user.username.lower()
+        == whisper["withuser"].replace("@", "").lower()
+    ):
+        await callback_query.answer(whisper["message"], show_alert=True)
+    elif userType == "id" and from_user_id == int(whisper["withuser"]):
+        await callback_query.answer(whisper["message"], show_alert=True)
+    else:
+        await callback_query.answer("Not your Whisper!", show_alert=True)
+
+

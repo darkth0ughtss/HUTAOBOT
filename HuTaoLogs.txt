@@ -54,3 +54,661 @@ ModuleNotFoundError: No module named 'async_pymongo'
 ModuleNotFoundError: No module named 'async_pymongo'
 
 [17-Jul-24 18:49:18 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[17-Jul-24 13:24:25 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:24:26 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | couples        |
+| filters        | forcesub       | image_generation| imposter       |
+| join_req       | miscs          | mutes          | notes          |
+| ping           | pins           | purge          | s_welcome      |
+| start          | tagall         | telegraph      | translate      |
+| upscale        | userlogging    | warns          | whisper        |
+
+[17-Jul-24 13:24:26 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[17-Jul-24 13:24:26 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[17-Jul-24 13:24:26 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[17-Jul-24 13:30:45 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:30:45 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | couples        |
+| filters        | forcesub       | image_generation| imposter       |
+| join_req       | miscs          | mutes          | notes          |
+| ping           | pins           | purge          | s_welcome      |
+| start          | tagall         | telegraph      | translate      |
+| upscale        | userlogging    | warns          | whisper        |
+
+[17-Jul-24 13:30:45 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[17-Jul-24 13:30:45 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[17-Jul-24 13:30:45 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[17-Jul-24 13:35:37 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:35:38 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/start.py", line 36, in <module>
+    f'[๏]({random_image}) 𝙾𝚔𝚊𝚎𝚛𝚒, 𝙸\'𝚖 '
+NameError: name 'random_image' is not defined
+
+[17-Jul-24 13:35:38 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[17-Jul-24 13:37:15 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:37:16 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/start.py", line 36
+    random_image = random.choice(start_images)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+
+[17-Jul-24 13:37:16 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[17-Jul-24 13:38:14 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:38:14 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/start.py", line 37, in <module>
+    f'{client_me.first_name}!\n'
+NameError: name 'client_me' is not defined
+
+[17-Jul-24 13:38:14 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[17-Jul-24 13:38:40 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:38:41 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/start.py", line 34
+    client_me = await client.get_me()
+                ^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: 'await' outside function
+
+[17-Jul-24 13:38:41 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[17-Jul-24 13:38:58 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:38:58 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/start.py", line 34, in <module>
+    client_me = client.get_me()
+NameError: name 'client' is not defined. Did you mean: 'Client'?
+
+[17-Jul-24 13:38:58 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[17-Jul-24 13:41:58 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:41:59 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/start.py", line 31, in <module>
+    client_me = bot.get_me()
+NameError: name 'bot' is not defined
+
+[17-Jul-24 13:41:59 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[17-Jul-24 13:42:27 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:42:28 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/start.py", line 36, in <module>
+    f'{client_me.first_name}!\n'
+AttributeError: 'coroutine' object has no attribute 'first_name'
+
+[17-Jul-24 13:42:28 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[17-Jul-24 13:43:13 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:43:13 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | couples        |
+| filters        | forcesub       | image_generation| imposter       |
+| join_req       | miscs          | mutes          | notes          |
+| ping           | pins           | purge          | s_welcome      |
+| start          | tagall         | telegraph      | translate      |
+| upscale        | userlogging    | warns          | whisper        |
+
+[17-Jul-24 13:43:13 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[17-Jul-24 13:43:13 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[17-Jul-24 13:43:14 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[17-Jul-24 13:43:29 - ERROR] - pyrogram.dispatcher.handler_worker - 'list' object has no attribute 'write'
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/workspaces/HUTAOBOT/HuTao/modules/start.py", line 240, in help_button
+    await query.edit_message_caption(
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 245, in edit_message_caption
+    return await self.edit_message_text(caption, parse_mode, reply_markup=reply_markup)
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 200, in edit_message_text
+    return await self._client.edit_message_text(
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/methods/messages/edit_message_text.py", line 87, in edit_message_text
+    reply_markup=await reply_markup.write(self) if reply_markup else None,
+AttributeError: 'list' object has no attribute 'write'
+[17-Jul-24 13:43:35 - ERROR] - pyrogram.dispatcher.handler_worker - 'list' object has no attribute 'write'
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/workspaces/HUTAOBOT/HuTao/modules/start.py", line 240, in help_button
+    await query.edit_message_caption(
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 245, in edit_message_caption
+    return await self.edit_message_text(caption, parse_mode, reply_markup=reply_markup)
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 200, in edit_message_text
+    return await self._client.edit_message_text(
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/methods/messages/edit_message_text.py", line 87, in edit_message_text
+    reply_markup=await reply_markup.write(self) if reply_markup else None,
+AttributeError: 'list' object has no attribute 'write'
+[17-Jul-24 13:45:35 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:45:36 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | couples        |
+| filters        | forcesub       | image_generation| imposter       |
+| join_req       | miscs          | mutes          | notes          |
+| ping           | pins           | purge          | s_welcome      |
+| start          | tagall         | telegraph      | translate      |
+| upscale        | userlogging    | warns          | whisper        |
+
+[17-Jul-24 13:45:36 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[17-Jul-24 13:45:36 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[17-Jul-24 13:45:36 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[17-Jul-24 13:47:58 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:47:58 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | couples        |
+| filters        | forcesub       | image_generation| imposter       |
+| join_req       | miscs          | mutes          | notes          |
+| ping           | pins           | purge          | s_welcome      |
+| start          | tagall         | telegraph      | translate      |
+| upscale        | userlogging    | warns          | whisper        |
+
+[17-Jul-24 13:47:58 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[17-Jul-24 13:47:58 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[17-Jul-24 13:47:58 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[17-Jul-24 13:50:55 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[17-Jul-24 13:50:55 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | couples        |
+| filters        | forcesub       | image_generation| imposter       |
+| join_req       | miscs          | mutes          | notes          |
+| ping           | pins           | purge          | s_welcome      |
+| start          | tagall         | telegraph      | translate      |
+| upscale        | userlogging    | warns          | whisper        |
+
+[17-Jul-24 13:50:55 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[17-Jul-24 13:50:55 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[17-Jul-24 13:50:56 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[17-Jul-24 13:51:46 - ERROR] - pyrogram.dispatcher.handler_worker - 'AsyncDatabase' object has no attribute 'find_one'
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/workspaces/HUTAOBOT/HuTao/modules/afk.py", line 23, in active_afk
+    verifier, reasondb = await is_afk(user_id)
+  File "/workspaces/HUTAOBOT/HuTao/database/__init__.py", line 18, in is_afk
+    user = await afkdb.find_one({"user_id": user_id})
+AttributeError: 'AsyncDatabase' object has no attribute 'find_one'
+[18-Jul-24 09:39:32 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 09:39:34 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | couples        |
+| filters        | forcesub       | help           | image_generation|
+| imposter       | join_req       | miscs          | mutes          |
+| notes          | ping           | pins           | purge          |
+| s_welcome      | start          | tagall         | telegraph      |
+| translate      | upscale        | userlogging    | warns          |
+| whisper        
+[18-Jul-24 09:39:34 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[18-Jul-24 09:39:34 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[18-Jul-24 09:39:34 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[18-Jul-24 09:43:24 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 09:43:25 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | couples        |
+| filters        | forcesub       | help           | image_generation|
+| imposter       | join_req       | lyrics         | miscs          |
+| mutes          | notes          | ping           | pins           |
+| purge          | s_welcome      | start          | tagall         |
+| telegraph      | translate      | upscale        | userlogging    |
+| warns          | whisper        
+[18-Jul-24 09:43:25 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[18-Jul-24 09:43:25 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[18-Jul-24 09:43:25 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[18-Jul-24 09:43:34 - ERROR] - HuTao.modules.lyrics.lyrics_handler - Error fetching lyrics: [Errno 403] 403 Client Error: Forbidden for url: https://genius.com/api/search/multi?q=Husn
+[18-Jul-24 09:46:23 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 09:46:24 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | couples        |
+| filters        | forcesub       | help           | image_generation|
+| imposter       | join_req       | lyrics         | miscs          |
+| mutes          | notes          | ping           | pins           |
+| pokedex        | purge          | s_welcome      | start          |
+| tagall         | telegraph      | translate      | upscale        |
+| userlogging    | warns          | whisper        
+[18-Jul-24 09:46:24 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[18-Jul-24 09:46:24 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[18-Jul-24 09:46:24 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[18-Jul-24 09:47:03 - INFO] - httpx._send_single_request - HTTP Request: GET https://sugoi-api.vercel.app/pokemon?name=Pikachu "HTTP/2 200 OK"
+[18-Jul-24 09:47:14 - ERROR] - HuTao.modules.lyrics.lyrics_handler - Error fetching lyrics: [Errno 403] 403 Client Error: Forbidden for url: https://genius.com/api/search/multi?q=Husn
+[18-Jul-24 10:12:27 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 10:12:28 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/pin_handler.py", line 7, in <module>
+    from ..features.pin import download_pinterest_media
+  File "/workspaces/HUTAOBOT/HuTao/features/pin.py", line 3, in <module>
+    import yt_dlp
+ModuleNotFoundError: No module named 'yt_dlp'
+
+[18-Jul-24 10:12:28 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[18-Jul-24 10:20:38 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 10:20:39 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/song.py", line 4, in <module>
+    from ..features.ytsearch import search_song, download_audio, download_video
+ModuleNotFoundError: No module named 'HuTao.features.ytsearch'
+
+[18-Jul-24 10:20:39 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[18-Jul-24 10:20:40 - ERROR] - asyncio.default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x73aef16f9420>
+[18-Jul-24 10:21:53 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 10:21:54 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/song_suggestion.py", line 2, in <module>
+    from ..features.song_suggestion import sp
+  File "/workspaces/HUTAOBOT/HuTao/features/song_suggestion.py", line 2, in <module>
+    import spotipy
+ModuleNotFoundError: No module named 'spotipy'
+
+[18-Jul-24 10:21:54 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[18-Jul-24 10:21:55 - ERROR] - asyncio.default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x717cf7699630>
+[18-Jul-24 10:22:23 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 10:22:25 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/tts.py", line 4, in <module>
+    from gtts import gTTS
+ModuleNotFoundError: No module named 'gtts'
+
+[18-Jul-24 10:22:25 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[18-Jul-24 10:22:25 - ERROR] - asyncio.default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x76ea44a21570>
+[18-Jul-24 10:22:38 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 10:22:39 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | cosplay        |
+| couples        | cptgh          | cricket        | extra          |
+| filters        | forcesub       | fun            | git            |
+| help           | image_generation| imposter       | join_req       |
+| lyrics         | math           | miscs          | mutes          |
+| notes          | pin_handler    | ping           | pins           |
+| pokedex        | purge          | s_welcome      | sexy           |
+| song           | song_suggestion| speed          | ss             |
+| start          | tagall         | telegraph      | translate      |
+| truth_dare     | tts            | ud             | upscale        |
+| userlogging    | waifu          | warns          | whisper        |
+| wish           | yt_handler     
+[18-Jul-24 10:22:39 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[18-Jul-24 10:22:39 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[18-Jul-24 10:22:40 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[18-Jul-24 10:23:15 - INFO] - httpx._send_single_request - HTTP Request: POST https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8 "HTTP/1.1 200 OK"
+[18-Jul-24 10:23:18 - ERROR] - pyrogram.dispatcher.handler_worker - [0;31mERROR:[0m Postprocessing: ffprobe and ffmpeg not found. Please install or provide the path using --ffmpeg-location
+Traceback (most recent call last):
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3561, in process_info
+    replace_info_dict(self.post_process(dl_filename, info_dict, files_to_move))
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3743, in post_process
+    info = self.run_all_pps('post_process', info, additional_pps=info.get('__postprocessors'))
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3725, in run_all_pps
+    info = self.run_pp(pp, info)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3703, in run_pp
+    files_to_delete, infodict = pp.run(infodict)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/postprocessor/common.py", line 23, in run
+    ret = func(self, info, *args, **kwargs)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/postprocessor/common.py", line 128, in wrapper
+    return func(self, info)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/postprocessor/ffmpeg.py", line 494, in run
+    filecodec = self.get_audio_codec(path)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/postprocessor/ffmpeg.py", line 242, in get_audio_codec
+    raise PostProcessingError('ffprobe and ffmpeg not found. Please install or provide the path using --ffmpeg-location')
+yt_dlp.utils.PostProcessingError: ffprobe and ffmpeg not found. Please install or provide the path using --ffmpeg-location
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/workspaces/HUTAOBOT/HuTao/modules/song.py", line 22, in song_handler
+    file_path = await asyncio.to_thread(download_audio, video_info['link'])
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "/usr/local/python/3.10.13/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/workspaces/HUTAOBOT/HuTao/features/ytsearch.py", line 34, in download_audio
+    info_dict = ydl.extract_info(url, download=True)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 1615, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 1626, in wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 1782, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 1841, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3015, in process_video_result
+    self.process_info(new_info)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 179, in wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3563, in process_info
+    self.report_error(f'Postprocessing: {err}')
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 1092, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+[18-Jul-24 10:30:46 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 10:30:47 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/font.py", line 4, in <module>
+    from ..features import font
+  File "/workspaces/HUTAOBOT/HuTao/features/font.py", line 2
+    import ..key as key
+           ^
+SyntaxError: invalid syntax
+
+[18-Jul-24 10:30:47 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[18-Jul-24 10:31:19 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 10:31:20 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | cosplay        |
+| couples        | cptgh          | cricket        | extra          |
+| filters        | font           | forcesub       | fun            |
+| git            | help           | image_generation| imposter       |
+| join_req       | lyrics         | math           | miscs          |
+| mutes          | notes          | pin_handler    | ping           |
+| pins           | pokedex        | purge          | s_welcome      |
+| sexy           | song           | song_suggestion| speed          |
+| ss             | start          | tagall         | telegraph      |
+| translate      | truth_dare     | tts            | ud             |
+| upscale        | userlogging    | waifu          | warns          |
+| whisper        | wish           | yt_handler     
+[18-Jul-24 10:31:20 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[18-Jul-24 10:31:20 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[18-Jul-24 10:31:21 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[18-Jul-24 10:31:40 - INFO] - httpx._send_single_request - HTTP Request: POST https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8 "HTTP/1.1 200 OK"
+[18-Jul-24 10:32:25 - INFO] - httpx._send_single_request - HTTP Request: GET https://api.waifu.pics/sfw/waifu "HTTP/1.1 200 OK"
+[18-Jul-24 10:33:15 - ERROR] - pyrogram.dispatcher.handler_worker - 'AsyncDatabase' object has no attribute 'find_one'
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/workspaces/HUTAOBOT/HuTao/modules/afk.py", line 23, in active_afk
+    verifier, reasondb = await is_afk(user_id)
+  File "/workspaces/HUTAOBOT/HuTao/database/__init__.py", line 18, in is_afk
+    user = await afkdb.find_one({"user_id": user_id})
+AttributeError: 'AsyncDatabase' object has no attribute 'find_one'
+[18-Jul-24 10:34:57 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 10:34:59 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | cosplay        |
+| couples        | cptgh          | cricket        | extra          |
+| filters        | font           | forcesub       | fun            |
+| git            | help           | image_generation| imposter       |
+| join_req       | lyrics         | math           | miscs          |
+| mutes          | notes          | pin_handler    | ping           |
+| pins           | pokedex        | purge          | s_welcome      |
+| sexy           | song           | song_suggestion| speed          |
+| ss             | start          | tagall         | telegraph      |
+| translate      | truth_dare     | tts            | ud             |
+| upscale        | userlogging    | waifu          | warns          |
+| whisper        | wish           | yt_handler     
+[18-Jul-24 10:34:59 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[18-Jul-24 10:34:59 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[18-Jul-24 10:34:59 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[18-Jul-24 10:38:40 - INFO] - httpx._send_single_request - HTTP Request: POST https://lexica.qewertyy.dev/models/inference "HTTP/2 200 OK"
+[18-Jul-24 10:39:04 - INFO] - httpx._send_single_request - HTTP Request: POST https://lexica.qewertyy.dev/models/inference/task "HTTP/2 200 OK"
+[18-Jul-24 12:28:41 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 12:28:43 - INFO] - __main__.<module> - Traceback (most recent call last):
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 53, in <module>
+    loop.run_until_complete(start_bot())
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/workspaces/HUTAOBOT/HuTao/__main__.py", line 25, in start_bot
+    imported_module = importlib.import_module(f"HuTao.modules.{module}")
+  File "/usr/local/python/3.10.13/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/HUTAOBOT/HuTao/modules/couples.py", line 1, in <module>
+    from ..features.couple import nibba_nibbi
+  File "/workspaces/HUTAOBOT/HuTao/features/couple.py", line 7, in <module>
+    from ..database import get_couple, save_couple
+ImportError: cannot import name 'get_couple' from 'HuTao.database' (/workspaces/HUTAOBOT/HuTao/database/__init__.py)
+
+[18-Jul-24 12:28:43 - INFO] - __main__.<module> - ------------------------ Stopped Services ------------------------
+[18-Jul-24 12:29:27 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 12:29:30 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | cosplay        |
+| couples        | cptgh          | cricket        | extra          |
+| filters        | font           | forcesub       | fun            |
+| git            | help           | image_generation| imposter       |
+| join_req       | lyrics         | math           | miscs          |
+| mutes          | notes          | pin_handler    | ping           |
+| pins           | pokedex        | purge          | s_welcome      |
+| sexy           | song           | song_suggestion| speed          |
+| ss             | start          | tagall         | telegraph      |
+| translate      | truth_dare     | tts            | ud             |
+| upscale        | userlogging    | waifu          | warns          |
+| whisper        | wish           | yt_handler     
+[18-Jul-24 12:29:30 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[18-Jul-24 12:29:30 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[18-Jul-24 12:29:30 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[18-Jul-24 12:31:45 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 12:31:47 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | cosplay        |
+| couples        | cptgh          | cricket        | extra          |
+| filters        | font           | forcesub       | fun            |
+| git            | help           | image_generation| imposter       |
+| join_req       | lyrics         | math           | miscs          |
+| mutes          | notes          | pin_handler    | ping           |
+| pins           | pokedex        | purge          | s_welcome      |
+| sexy           | song           | song_suggestion| speed          |
+| ss             | start          | tagall         | telegraph      |
+| translate      | truth_dare     | tts            | ud             |
+| upscale        | userlogging    | waifu          | warns          |
+| whisper        | wish           | yt_handler     
+[18-Jul-24 12:31:47 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[18-Jul-24 12:31:47 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[18-Jul-24 12:31:47 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[18-Jul-24 12:32:55 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 12:32:57 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | cosplay        |
+| couples        | cptgh          | cricket        | extra          |
+| filters        | font           | forcesub       | fun            |
+| git            | help           | image_generation| imposter       |
+| join_req       | lyrics         | math           | miscs          |
+| mutes          | notes          | pin_handler    | ping           |
+| pins           | pokedex        | purge          | s_welcome      |
+| sexy           | song           | song_suggestion| speed          |
+| ss             | start          | tagall         | telegraph      |
+| translate      | truth_dare     | tts            | ud             |
+| upscale        | userlogging    | waifu          | warns          |
+| whisper        | wish           | yt_handler     
+[18-Jul-24 12:32:57 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[18-Jul-24 12:32:57 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[18-Jul-24 12:32:57 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[18-Jul-24 12:34:05 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 12:34:06 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | cosplay        |
+| couples        | cptgh          | cricket        | extra          |
+| filters        | font           | forcesub       | fun            |
+| git            | help           | image_generation| imposter       |
+| join_req       | lyrics         | math           | miscs          |
+| mutes          | notes          | pin_handler    | ping           |
+| pins           | pokedex        | purge          | s_welcome      |
+| search         | sexy           | song           | song_suggestion|
+| speed          | ss             | start          | tagall         |
+| telegraph      | translate      | truth_dare     | tts            |
+| ud             | upscale        | userlogging    | waifu          |
+| warns          | whisper        | wish           | yt_handler     |
+
+[18-Jul-24 12:34:06 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[18-Jul-24 12:34:06 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[18-Jul-24 12:34:06 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'
+[18-Jul-24 12:34:15 - INFO] - httpx._send_single_request - HTTP Request: GET https://sugoi-api.vercel.app/news?keyword= "HTTP/2 400 Bad Request"
+[18-Jul-24 12:34:24 - INFO] - httpx._send_single_request - HTTP Request: GET https://sugoi-api.vercel.app/news?keyword=Infia "HTTP/2 200 OK"
+[18-Jul-24 12:34:33 - INFO] - httpx._send_single_request - HTTP Request: GET https://sugoi-api.vercel.app/news?keyword=India "HTTP/2 200 OK"
+[18-Jul-24 12:36:05 - ERROR] - pyrogram.dispatcher.handler_worker - local variable 'username' referenced before assignment
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/workspaces/HUTAOBOT/HuTao/modules/whisper.py", line 42, in whisper
+    text = f"**🔒 Secret whisper for ( @{username} ) .ا**"
+UnboundLocalError: local variable 'username' referenced before assignment
+[18-Jul-24 12:36:07 - ERROR] - pyrogram.dispatcher.handler_worker - local variable 'username' referenced before assignment
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/workspaces/HUTAOBOT/HuTao/modules/whisper.py", line 42, in whisper
+    text = f"**🔒 Secret whisper for ( @{username} ) .ا**"
+UnboundLocalError: local variable 'username' referenced before assignment
+[18-Jul-24 12:37:36 - INFO] - HuTao.modules.<module> - [INFO]: IMPORTING PLUGINS
+[18-Jul-24 12:37:38 - INFO] - __main__.start_bot - | admins         | afk            | anime          | approve        |
+| bans           | botstatus      | broadcast      | cosplay        |
+| couples        | cptgh          | cricket        | extra          |
+| filters        | font           | forcesub       | fun            |
+| git            | help           | image_generation| imposter       |
+| join_req       | lyrics         | math           | miscs          |
+| mutes          | notes          | pin_handler    | ping           |
+| pins           | pokedex        | purge          | s_welcome      |
+| search         | sexy           | song           | song_suggestion|
+| speed          | ss             | start          | tagall         |
+| telegraph      | translate      | truth_dare     | tts            |
+| ud             | upscale        | userlogging    | waifu          |
+| warns          | whisper        | wish           | yt_handler     |
+
+[18-Jul-24 12:37:38 - INFO] - __main__.start_bot - [INFO]: BOT STARTED: @testinght_bot!
+[18-Jul-24 12:37:38 - INFO] - __main__.start_bot - [INFO]: START MESSAGE
+[18-Jul-24 12:37:38 - ERROR] - __main__.start_bot - 'Username not found: dominosxd'

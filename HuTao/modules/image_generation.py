@@ -21,7 +21,7 @@ async def generate(_, message):
     for i in ImageModels:
         btns.append(InlineKeyboardButton(text=i,callback_data=f"draw.{ImageModels[i]}.{user.id}"))
     btns = [[btns[0],btns[1]],[btns[2],btns[3]],[btns[4],btns[5]]]
-    await message.reply_photo("https://graph.org//file/a24ad0babb868d539b744.jpg", caption=f"**SELECT A MODEL TO GENERATE**",reply_markup=InlineKeyboardMarkup(btns))
+    await message.reply_photo("https://telegra.ph/file/b63efe1a43972d3db956c.jpg", caption=f"**SELECT A MODEL TO GENERATE**",reply_markup=InlineKeyboardMarkup(btns))
 
 @app.on_callback_query(filters.regex("^draw.(.*)"))
 async def draw(_,query):

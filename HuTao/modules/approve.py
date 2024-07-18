@@ -37,10 +37,10 @@ async def approve(_, message):
     user = await mention_html("User", user_id)
 
     if check_user:
-        return await message.reply_photo("https://graph.org//file/49f86e096c434f3a2dc0d.jpg", caption=f"**Isn't {user} Already Approved?**")
+        return await message.reply_photo("https://telegra.ph/file/58ccd2638f5c477f2811d.jpg", caption=f"**Isn't {user} Already Approved?**")
     
     await approve_user(chat_id, user_id)
-    return await message.reply_photo("https://graph.org//file/455a0e00eeaa55dce59f1.jpg", caption=f"""
+    return await message.reply_photo("https://telegra.ph/file/f3a1f73bf656e30eb9a9e.jpg", caption=f"""
 **ACTION: APPROVAL
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 USER: {user}
@@ -78,10 +78,10 @@ async def disapprove(_, message):
     user = await mention_html("User", user_id)
 
     if not check_user:
-        return await message.reply_photo("https://graph.org//file/49f86e096c434f3a2dc0d.jpg", caption=f"**{user} Isn't Approved In This Chat**")
+        return await message.reply_photo("https://telegra.ph/file/58ccd2638f5c477f2811d.jpg", caption=f"**{user} Isn't Approved In This Chat**")
     
     await disapprove_user(chat_id, user_id)
-    return await message.reply_photo("https://graph.org//file/455a0e00eeaa55dce59f1.jpg", caption=f"""
+    return await message.reply_photo("https://telegra.ph/file/f3a1f73bf656e30eb9a9e.jpg", caption=f"""
 **ACTION: DISAPPROVAL
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 USER: {user}
@@ -119,7 +119,7 @@ async def disappall(_, message):
     
     btn = InlineKeyboardMarkup([[InlineKeyboardButton("UNAPPROVE ALL", callback_data="unaproveall")]])
 
-    await message.reply_photo("https://graph.org//file/ea127c118c4d47a6ceb80.jpg", caption="**Are You Sure? To Unapprove All The Users In This Chat?**",reply_markup=btn)
+    await message.reply_photo("https://telegra.ph/file/f3a1f73bf656e30eb9a9e.jpg", caption="**Are You Sure? To Unapprove All The Users In This Chat?**",reply_markup=btn)
 
 @app.on_callback_query(filters.regex("unaproveall"))             
 async def unappall(_, query):

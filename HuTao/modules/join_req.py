@@ -22,7 +22,7 @@ async def chat_join_req(_, message:Message):
             await app.approve_chat_join_request(chat.id, user.id)
             await app.send_photo(
                 chat.id,
-                photo="https://graph.org//file/7ad7e0f73de5743262069.png",
+                photo="https://telegra.ph/file/d2ce98708c451b2ab8f4a.jpg",
                 caption="{} was approved to join {}".format(user.mention, chat.title or "this chat")
             )
             return
@@ -46,7 +46,7 @@ async def chat_join_req(_, message:Message):
     )
     await app.send_photo(
             chat.id,
-            photo="https://graph.org//file/7ad7e0f73de5743262069.png",
+            photo="https://telegra.ph/file/d2ce98708c451b2ab8f4a.jpg",
             caption="{} wants to join {}".format(user.mention, chat.title or "this chat"),
             reply_markup=keyboard
     )

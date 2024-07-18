@@ -11,7 +11,7 @@ async def upscaleImages(_, message):
     file = await getFile(message)
     if file is None:
         return await message.reply_text("Replay to an image?")
-    msg = await message.reply("Wait A Min.. Upscalling Your Image")
+    msg = await message.reply("Upscalling Your Image...")
     imageBytes = open(file,"rb").read()
     os.remove(file)
     upscaledImage = await UpscaleImages(imageBytes)

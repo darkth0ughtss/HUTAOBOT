@@ -105,7 +105,7 @@ BANNED USER: {banned}\n
         try:
             await message.reply_photo(
                 reply_to_message_id=r_id,
-                photo="https://graph.org//file/363c18fb1162093120ea4.jpg",
+                photo="https://telegra.ph/file/88e49e34c67873e694139.jpg",
                 caption=txt,
                 reply_markup=keyboard
             )
@@ -180,7 +180,7 @@ BANNED USER: {banned}\n
         try:
             await message.reply_photo(
                 reply_to_message_id=r_id,
-                photo="https://graph.org//file/363c18fb1162093120ea4.jpg",
+                photo="https://telegra.ph/file/88e49e34c67873e694139.jpg",
                 caption=txt,
                 reply_markup=keyboard
             )
@@ -255,7 +255,7 @@ KICKED USER: {kicked}
         try:
             await message.reply_photo(
                 reply_to_message_id=r_id,
-                photo="https://graph.org//file/363c18fb1162093120ea4.jpg",
+                photo="https://telegra.ph/file/88e49e34c67873e694139.jpg",
                 caption=txt
             )
         except:
@@ -303,7 +303,7 @@ KICKED USER: {kicked}
 """
         try:
             await message.reply_photo(
-                photo="https://graph.org//file/363c18fb1162093120ea4.jpg",
+                photo="https://telegra.ph/file/88e49e34c67873e694139.jpg",
                 caption=txt
             )
         except:
@@ -444,7 +444,7 @@ BANNED USER: {banned}\n
         try:
             await message.reply_photo(
                 reply_to_message_id=r_id,
-                photo="https://graph.org//file/87a24439448fd8e6a0ba4.png",
+                photo="https://telegra.ph/file/88e49e34c67873e694139.jpg",
                 caption=txt,
                 reply_markup=keyboard
             )
@@ -503,7 +503,7 @@ BANNED USER: {banned}\n
         )
         try:
             await c.send_photo(
-                message.chat.id, photo="https://graph.org//file/363c18fb1162093120ea4.jpg", caption=txt, reply_markup=keyboard
+                message.chat.id, photo="https://telegra.ph/file/88e49e34c67873e694139.jpg", caption=txt, reply_markup=keyboard
             )
         except Exception:
             await c.send_message(message.chat.id, txt ,reply_markup=keyboard)
@@ -584,7 +584,7 @@ USER: {message.from_user.mention}\n
           txt += f"REASON: {reason}\n➖➖➖➖➖➖➖➖➖➖➖➖➖**"
         else:
           txt += "REASON: Not Specified\n➖➖➖➖➖➖➖➖➖➖➖➖➖**"
-        a = await message.reply_photo("https://graph.org//file/f207b657444d0ad67794d.png", caption=txt)
+        a = await message.reply_photo("https://telegra.ph/file/88e49e34c67873e694139.jpg", caption=txt)
         await message.chat.unban_member(message.from_user.id)
         asyncio.sleep(5)
         await a.delete()

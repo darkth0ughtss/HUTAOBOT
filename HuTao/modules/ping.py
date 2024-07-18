@@ -7,18 +7,19 @@ from pyrogram import filters
 from HuTao import app, start, Hutao_Ver
 from HuTao.helpers.readable_time import get_readable_time
 from HuTao.Config import COMMAND_HANDLER
+from HuTao.modules.start import VERSION
 
 
 @app.on_message(filters.command(["ping"], COMMAND_HANDLER))
 async def ping(_, message):
     currentTime = get_readable_time(time.time() - start)
     start_t = time.time()
-    rm = await message.reply_photo("https://graph.org//file/6ede45ee5dd3ecfc7314e.jpg", caption="Pong..")
+    rm = await message.reply_photo("https://telegra.ph/file/88e49e34c67873e694139.jpg", caption="Pong..")
     end_t = time.time()
     time_taken_s = round(end_t - start_t, 3)
     await rm.edit_caption(
         f"""
-**BOT VERSION:** {Hutao_Ver}
+**BOT VERSION:** {VERSION}
 
 **PING:** {time_taken_s} seconds
 **UPTIME:** {currentTime}"""

@@ -100,7 +100,7 @@ BY ADMIN: {admin}\n
         )
         try:
             await message.reply_photo(
-                photo="https://graph.org//file/ad02d4190326d04c39a91.jpg",
+                photo="https://telegra.ph/file/88e49e34c67873e694139.jpg",
                 caption=txt,
                 reply_markup=keyboard,
                 reply_to_message_id=r_id,
@@ -153,7 +153,7 @@ BY ADMIN: {admin}\n
 
           try:
             await message.reply_photo(
-                photo="https://graph.org//file/ad02d4190326d04c39a91.jpg",
+                photo="https://telegra.ph/file/88e49e34c67873e694139.jpg",
                 caption=txt,
                 reply_markup=keyboard,
             )
@@ -260,7 +260,7 @@ BY ADMIN: {admin}\n
         )
         try:
             await message.reply_photo(
-                photo="https://graph.org//file/ad02d4190326d04c39a91.jpg",
+                photo="https://telegra.ph/file/88e49e34c67873e694139.jpg",
                 caption=txt,
                 reply_markup=keyboard,
                 reply_to_message_id=r_id,
@@ -325,7 +325,7 @@ BY ADMIN: {admin}\n
         )
         try:
             await message.reply_photo(
-                photo="https://graph.org//file/ad02d4190326d04c39a91.jpg",
+                photo="https://telegra.ph/file/88e49e34c67873e694139.jpg",
                 caption=txt,
                 reply_markup=keyboard,
             )
